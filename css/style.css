@@ -18,6 +18,8 @@ ul.nav-menu{
     font-size: 2.2rem;
     padding: 2rem;
     align-items: center;
+    flex-wrap: wrap;
+
     
 }
 .nav-menu li{
@@ -46,6 +48,8 @@ ul.nav-menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 .bander{
     position: relative;
@@ -110,12 +114,6 @@ ul.nav-menu{
 .section-aboutus{
     padding-top: 100px;
 }
-.title-content__text{
-    text-align: center;
-    max-width: 1170px;
-    margin: auto;
-    font-size: 1.6rem;
-}
 .heder-title{
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -134,10 +132,14 @@ ul.nav-menu{
     margin: auto;
     border-radius: 3px;  
 }
-.paragraph-aboutus{
+.paragraph{
     padding-top: 30px;
     font-weight: 500;
     line-height: 40px;
+    text-align: center;
+    max-width: 1170px;
+    margin: auto;
+    font-size: 1.6rem;
 }
 .photo-container__box{
     height: 190px;
@@ -188,16 +190,20 @@ ul.nav-menu{
     margin: auto;  
     border-radius: 2px;
 }
-.line-cards:hover{
+.photo-container__box:hover{
     background-color:  rgb(240, 88, 34);
     cursor: pointer;
+    border: none;
 }
+
 
 .content-cards{
     display: flex;
     padding-top: 100px;
     justify-content: center;
     padding-bottom: 150px;
+    flex-wrap: wrap;
+
 }
 .section-protfolio{
     margin: auto;
@@ -230,3 +236,267 @@ ul.nav-menu{
     cursor: pointer;
     
 }
+.portfolio-filter li:active{
+    scale: 0.97;
+}
+.section-timer{
+    background-color: rgb(240, 88, 34);
+    color: #FFE3D8;
+    
+}
+.projects{
+    text-transform: uppercase;
+    text-align: center   ;
+}
+.number{
+    font-size: 9.6rem;
+    font-weight: 750;
+}
+.texts{
+    font-size: 2.4rem;
+}
+
+.container-timer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+.container-blog__card{
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-bottom: 140px;
+
+}
+.section-blog{
+    padding-top: 60px;
+}
+.blog-image{
+    width: 350px;
+    height: 350px;
+}
+.title-blog{
+    text-transform: uppercase;
+    padding-top: 30px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+.card-blog-subtitle{
+    color: gray;
+}
+.card-blog-title{
+    font-weight: 800;
+}
+.more-button{
+    color: #F99B16;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+.more-button:hover{
+    color:  rgb(240, 88, 34) ;
+    scale: 1.05;
+}
+.section-out_team{
+    background-color: #FFE3D8;
+    padding-top: 150px;
+}
+.section-card{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+.section-contact_team{
+    padding-top: 150px;
+    padding-bottom: 200px
+}
+form input[type=text],
+[type=email]{
+    width: 700px;
+    height: 50px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+form input[type=textarea]{
+    width: 700px;
+    padding-bottom: 190px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    
+}
+form input{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.photo-content_box{
+    height: 90px;
+    width: 90px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 45px;
+    position: relative;
+    margin-right: 20px;
+}
+.contact-photo{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.title-contant{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+}
+.information-contact{
+    display: flex;
+    padding-bottom: 40px;
+
+}
+.information-our_company p{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 30px;
+}
+.content-information{
+    display: flex;
+    padding-top: 100px;
+    max-width: 1170px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cont-btn{
+    padding: 1.5rem 4rem;
+    background-color: white;
+}
+.cont-btn:hover{
+    background-color: #F99B16;
+    scale: 1.05;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+    border: none;
+}
+.cont-btn:active{
+    scale: 0.97;
+}
+.contact-btn{
+    text-align: center;
+}
+.photo-content_box:hover{
+    background-color:#F99B16;
+    border: none;
+    scale: 1.05;
+    cursor: pointer;
+}
+.pre-footer{
+    background-color: #212121;
+}
+
+.title-footer_01{
+    color:#F99B16;
+    text-transform: uppercase;
+    font-weight: 750;
+    padding-bottom: 20px;
+    
+}
+.title-footer_02{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 750;
+    padding-bottom: 20px;
+}
+.paragraph-footer{
+    font-size: 1.6rem;
+    width: 400px;
+    line-height: 30px;
+    font-weight: 650;
+    color: white;
+}
+.logo-footer{
+    margin-top: 10px;
+    padding-top: 10px;
+    height: 60px;
+}
+.footer-two a{
+    text-decoration: none;
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+    display: flex;
+}
+.title-footer{
+    padding-bottom: 30px;
+}
+#email02{
+    width: 550px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 3px solid white;
+    font-size: 1.6rem;
+    font-weight: 750;
+
+}
+.cont-footer_btn{
+    padding: 1.5rem 6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.cont-footer_btn:hover{
+    background-color: #F99B16;
+    scale: 1.05;
+    cursor: pointer;
+}
+.cont-footer_btn:active{
+    scale: 0.97;
+}
+.footer-one-compls{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: auto;
+}
+.footer-one-end{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    
+}
+.footer-width{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: auto;
+    padding-top: 60px;
+    
+}
+svg{
+    fill: white;
+    height: 25px;
+    width: 25px;
+    margin-left: 60px;
+}
+svg:hover{
+    fill: #F99B16;
+    cursor: pointer;
+    scale: 1.05;
+}
+.footer-p{
+    font-size: 1.6rem;
+}
+
+
