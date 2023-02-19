@@ -7,6 +7,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
     font-size: 10px;
     font-weight: 700;
+    background-color: rgb(247, 247, 247);
 }
 .logo{
     height: 100px;
@@ -22,6 +23,32 @@ ul.nav-menu{
 
     
 }
+
+.nav-menu a {
+    display: block;
+}
+
+.nav-menu a.nav-toggle {
+    display: none;
+}
+.burger{
+
+
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .nav-menu a:not(.nav-toggle) {
+      display: none;
+    }
+  
+    .nav-menu a.nav-toggle {
+      display: block;
+    }
+  }
 .nav-menu li{
     padding-left: 15px;
     
@@ -92,6 +119,7 @@ ul.nav-menu{
     padding: 2.5rem 4.5rem;
 
 }
+
 .btn-contract{
     border-radius: 35px;
     color: white;
@@ -113,6 +141,8 @@ ul.nav-menu{
 }
 .section-aboutus{
     padding-top: 100px;
+    max-width: 1170px;
+    margin: auto;
 }
 .heder-title{
     text-transform: uppercase;
@@ -172,6 +202,7 @@ ul.nav-menu{
     font-size: 1.6rem;
     line-height: 25px;
     font-weight: 500;
+    padding-bottom: 2rem;
 
 }
 
@@ -180,9 +211,7 @@ ul.nav-menu{
     text-align: center;
     
 }
-.cards:not(:last-child){
-    margin-right: 150px;
-}
+
 .line-cards{
     background-color: black;
     height: 4px;
@@ -200,9 +229,13 @@ ul.nav-menu{
 .content-cards{
     display: flex;
     padding-top: 100px;
-    justify-content: center;
+    justify-content: space-around;
     padding-bottom: 150px;
     flex-wrap: wrap;
+    margin: auto;
+    padding: 10rem;
+    
+    
 
 }
 .section-protfolio{
@@ -211,6 +244,8 @@ ul.nav-menu{
 .button-filter__portfolio{
     text-align: center;
     padding:40px;
+    
+ 
 }
 .portfolio-filter li{
     padding: 2rem 4rem;
@@ -222,13 +257,58 @@ ul.nav-menu{
 .buton{
     text-decoration: none;
     color: black;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    padding: 1.5rem 2rem;
     font-weight: 500;
-}
-.portfolio-filter li:not(:last-child){
     margin-right: 50px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-bottom: 2rem;
 }
-.portfolio-filter li:hover{
+
+.container-photo_filter {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.hover-photo{
+    position: relative;
+}
+.hover-photo:hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background-image: linear-gradient(90deg, 
+    rgb(240, 88, 34,.8), 
+    rgb(253, 189, 16,.8)
+    );
+  }
+.hover-photo:hover::after {
+    content: "HOW 2 FIT";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+.image {
+    margin: 2px;
+}
+
+.hide {
+    display: none;
+}
+
+.buton:hover{
     background-color:  rgb(240, 88, 34);
     color: white;
     scale: 1.05;
@@ -246,7 +326,8 @@ ul.nav-menu{
 }
 .projects{
     text-transform: uppercase;
-    text-align: center   ;
+    text-align: center;
+    padding: 2rem 2rem 2rem 2rem;
 }
 .number{
     font-size: 9.6rem;
@@ -258,11 +339,12 @@ ul.nav-menu{
 
 .container-timer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1170px;
     margin: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+
+    padding: 100px 20px 100px 20px;
 
 }
 .container-blog__card{
@@ -274,6 +356,7 @@ ul.nav-menu{
     margin: auto;
     flex-wrap: wrap;
     padding-bottom: 140px;
+    
 
 }
 .section-blog{
@@ -282,6 +365,7 @@ ul.nav-menu{
 .blog-image{
     width: 350px;
     height: 350px;
+   
 }
 .title-blog{
     text-transform: uppercase;
@@ -289,6 +373,23 @@ ul.nav-menu{
     letter-spacing: 2px;
     line-height: 30px;
     padding-bottom: 15px;
+    
+}
+.blog-card{
+    position: relative;
+    margin: auto;
+    padding-bottom: 2rem;
+    
+}
+.srt{
+    position: absolute;
+    background-color: #F99B16;
+    padding: 3rem 2rem;
+   text-align: center;
+   color: aliceblue;
+   font-size: 1.6rem;
+   top: 0;
+   right: 0;
 }
 .card-blog-subtitle{
     color: gray;
@@ -311,11 +412,17 @@ ul.nav-menu{
 }
 .section-card{
     display: flex;
+    flex-wrap: wrap;
+    
     justify-content: space-between;
     max-width: 1170px;
     margin: auto;
     padding-top: 50px;
     padding-bottom: 150px;
+}
+.ourteam-card{
+    padding-bottom: 2rem;
+    margin: auto;
 }
 .section-contact_team{
     padding-top: 150px;
@@ -327,6 +434,7 @@ form input[type=text],
     height: 50px;
     margin-bottom: 40px;
     padding-left: 20px;
+    
 }
 form input[type=textarea]{
     width: 700px;
@@ -380,6 +488,8 @@ form input{
     margin: auto;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .cont-btn{
     padding: 1.5rem 4rem;
@@ -406,6 +516,7 @@ form input{
 }
 .pre-footer{
     background-color: #212121;
+   
 }
 
 .title-footer_01{
@@ -470,18 +581,22 @@ form input{
     justify-content: space-between;
     max-width: 1170px;
     margin: auto;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .footer-one-end{
     background-color: rgb(19, 19, 19);
     color: white;
     
 }
+
 .footer-width{
     display: flex;
     justify-content: space-between;
     max-width: 1170px;
     margin: auto;
-    padding-top: 60px;
+    padding: 6rem 2rem 3rem 2rem;
     
 }
 svg{
