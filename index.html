@@ -24,6 +24,11 @@
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Kontakt</a></li>
+            <a href="#" class="nav-toggle">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+              </a>
             <li>
               <a href="#"
                 ><img
@@ -110,46 +115,58 @@
       <h1 class="heder-title">Portfolio</h1>
       <div class="line"></div>
       <div class="button-filter__portfolio">
-        <ul class="portfolio-filter">
-          <li>
-            <a class="buton" data-id="alls" id="all_work" href="#"
-              >svi radovi</a
-            >
-          </li>
-          <li>
-            <a class="buton" data-id="alls" id="logo_design" href="#"
-              >logo dizajn</a
-            >
-          </li>
-          <li>
-            <a class="buton" data-id="alls" id="web_design" href="#"
-              >web dizajn</a
-            >
-          </li>
-          <li>
-            <a class="buton" data-id="alls" id="dev" href="#">development</a>
-          </li>
-        </ul>
-      </div>
+          <div>
+            <button type="button" class="buton" name="filter" value="all" checked>SVI RADOVI</button>
+            <button type="button" class="buton" name="filter" value="logo_design">LOGO DIZAJN</button>
+            <button type="button" class="buton" name="filter" value="web_design">WEB DIZAJN</button>
+            <button type="button" class="buton" name="filter" value="dev">DEVELOPMENT</button>
+        </div>
+        
+        <div class="container-photo_filter">
+          <div class="hover-photo"> 
+            <img src="./images/PORTFOLIO/tsif-logo-dizajn-680x480px.jpg" class="image" data-category="logo_design">
+          </div>
+          <div class="hover-photo"> 
+          <img src="./images/PORTFOLIO/rolex-logo-dizajn-340x480px.jpg" class="image" data-category="logo_design">
+          </div>
+          <div class="hover-photo"> 
+          <img src="./images/PORTFOLIO/shwamhouse-web-dizajn340x4960px.jpg" class="image" data-category="web_design">
+        </div>
+          <div class="hover-photo"> 
+          <img src="./images/PORTFOLIO/plum-web-dizajn340x480px.jpg" class="image" data-category="web_design">
+        </div>
+        <div class="hover-photo"> 
+          <img src="./images/PORTFOLIO/app-development.jpg" class="image" data-category="dev">
+        </div>
+          <div class="hover-photo"> 
+          <img src="./images/PORTFOLIO/how2fit-web-design.jpg" class="image" data-category="web_design">
+        </div>
+          <div class="hover-photo"> 
+          <img src="./images/PORTFOLIO/toyota-logo-dizajn-340x480px.jpg" class="image" data-category="logo_design">
+        </div>
+          <div class="hover-photo"> 
+          <img src="./images/PORTFOLIO/bcreative-web-dizajn.jpg" class="image" data-category="web_design">
+        </div>
+        </div>
       <div class="portfolio-section__galery"></div>
     </section>
 
     <section class="section-timer">
-      <div class="container-timer">
+      <div class="container-timer ">
         <div class="projects">
-          <span class="number"> 256 </span> <br />
+          <span class="number" id="one_number"> 256 </span> <br />
           <span class="texts">projekata</span>
         </div>
         <div class="projects">
-          <span class="number"> 355 </span><br />
+          <span class="number" id="two_number"> 355 </span><br />
           <span class="texts">Klijenata</span>
         </div>
         <div class="projects">
-          <span class="number"> 825 </span><br />
+          <span class="number" id="three_number"> 825 </span><br />
           <span class="texts">kafa</span>
         </div>
         <div class="projects">
-          <span class="number"> 75 </span><br />
+          <span class="number" id="four_number"> 75 </span><br />
           <span class="texts">priznanja</span>
         </div>
       </div>
@@ -175,6 +192,10 @@
               alt="blog_photo_01"
             />
           </div>
+          <div class="srt"> 
+            <span class="str-date">17.</span><br>
+            <span class="str-date">OKT</span>
+          </div>
           <div class="title-blog">
             <h2 class="card-blog-title">kvalitet ne izlazi iz mode</h2>
             <h2 class="card-blog-subtitle">logo dizajn</h2>
@@ -189,6 +210,10 @@
               src="./images/BLOG/optimizacija-sajta-1000x800px.jpg"
               alt="blog_photo_02"
             />
+          </div>
+          <div class="srt"> 
+            <span class="str-date">5.</span><br>
+            <span class="str-date">OKT</span>
           </div>
           <div class="title-blog">
             <h2 class="card-blog-title">kvalitet ne izlazi iz mode</h2>
@@ -205,6 +230,10 @@
               alt="blog_photo_03"
             />
           </div>
+          <div class="srt"> 
+            <span class="str-date">23.</span><br>
+            <span class="str-date">SEP</span>
+          </div>
           <div class="title-blog">
             <h2 class="card-blog-title">kvalitet ne izlazi iz mode</h2>
             <h2 class="card-blog-subtitle">logo dizajn</h2>
@@ -218,19 +247,19 @@
       <h1 class="heder-title">Upoznajte nas tim</h1>
       <div class="line"></div>
       <div class="section-card">
-        <div class="ourteam-card">
+        <div class="ourteam-card hover-photo">
           <img
             src="./images/UPOZNAJTE NAS TIM/Ime-Prezime-1-350x420px.jpg"
             alt="photo_team_01"
           />
         </div>
-        <div class="ourteam-card">
+        <div class="ourteam-card hover-photo">
           <img
             src="./images/UPOZNAJTE NAS TIM/Ime-Prezime-2-350x420px.jpg"
             alt="photo_team_02"
           />
         </div>
-        <div class="ourteam-card">
+        <div class="ourteam-card hover-photo">
           <img
             src="./images/UPOZNAJTE NAS TIM/Ime-Prezime-3-350x420px.jpg"
             alt="photo_team_03"
